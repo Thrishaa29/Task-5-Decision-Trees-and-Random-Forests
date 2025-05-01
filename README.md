@@ -35,7 +35,6 @@ dt_full = DecisionTreeClassifier(random_state=42)
 dt_full.fit(X_train, y_train)
 
 2. **Shallow tree** (limit `max_depth=3`) to control complexity:
-   ```python
 dt_shallow = DecisionTreeClassifier(max_depth=3, random_state=42)
 dt_shallow.fit(X_train, y_train)
 Evaluate both with .score() on train and test sets.
